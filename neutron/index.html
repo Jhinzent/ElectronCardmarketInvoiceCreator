@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tab Data Extractor</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      font-family: Arial, sans-serif;
+    }
+    #webview {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    #overlay {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      z-index: 10;
+      background: rgba(255, 255, 255, 0.8);
+      padding: 10px;
+      border-radius: 5px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    #overlay button, #overlay input {
+      margin: 5px 0;
+      padding: 8px 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+    #overlay button {
+      background-color: #007BFF;
+      color: white;
+      cursor: pointer;
+    }
+    #overlay button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tab Data Extractor</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      font-family: Arial, sans-serif;
+    }
+    #webview {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    #overlay {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      z-index: 10;
+      background: rgba(255, 255, 255, 0.8);
+      padding: 10px;
+      border-radius: 5px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    #overlay button, #overlay input {
+      margin: 5px 0;
+      padding: 8px 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+    #overlay button {
+      background-color: #007BFF;
+      color: white;
+      cursor: pointer;
+    }
+    #overlay button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <webview id="webview" src="https://www.cardmarket.com/en/YuGiOh/Orders/Sales/Paid" nodeintegration="true" disablewebsecurity="true"></webview>
+  <div id="overlay">
+    <h1>Tab Data Extractor</h1>
+    <h4>USN</h4>
+    <h4>PWD</h4>
+    <button id="back-button">Back</button>
+    <button id="generate-invoice">Generate Invoice</button>
+    
+    <!-- New URL Input and Button -->
+    <input type="text" id="url-input" placeholder="Enter URL" />
+    <button id="load-url">Load URL</button>
+  </div>
+  <script src="renderer.js"></script>
+</body>
+</html>
+</html>
